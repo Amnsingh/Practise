@@ -15,7 +15,7 @@ import junit.framework.Assert;
 public class POC {
 	final static String uri ="http://localhost:3000/";
 
-	//@Test
+	@Test
 	public void test_GET() {
 		baseURI=uri;
 		RequestSpecification httpRequest = RestAssured.given();
@@ -96,7 +96,7 @@ public class POC {
 		    System.out.println(statusCode);
 	}
 
-	@Test
+	//@Test
 	public void test_DELETE() {
 		baseURI=uri;
 		RequestSpecification httpRequest = RestAssured.given();
