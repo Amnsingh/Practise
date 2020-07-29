@@ -28,12 +28,10 @@ public class POC {
 
 		int statusCode = response.getStatusCode();
 
-
-
 		Assert.assertTrue(firstName.equalsIgnoreCase("Graham"));
 		Assert.assertEquals(200, statusCode);
 	}
-	//@Test
+	@Test
 	public void test_POST() {
 		JSONObject request = new JSONObject();
 		request.put("firstName", "Dennis");
