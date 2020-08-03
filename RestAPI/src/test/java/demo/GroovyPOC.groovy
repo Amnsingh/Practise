@@ -1,6 +1,5 @@
 package demo
 
-import java.net.Authenticator.RequestorType
 
 import org.json.simple.JSONObject
 import org.junit.Before
@@ -21,7 +20,7 @@ class GroovyPOC {
 	//@Test
 		void test_GET() {
 		RequestSpecification httpRequest = RestAssured.given()
-		Response response = httpRequest.get("/users");
+		Response response = httpRequest.get("/users")
 		httpRequest.then().statusCode(200)
 		JsonPath jsonPathEvaluator = response.jsonPath()
 		println(response.getBody().asString())
